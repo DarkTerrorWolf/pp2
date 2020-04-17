@@ -11,6 +11,7 @@ Url: https://tschlosser.greenriverdev.com/328/pairPrograms/pp2/index.php
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
+include("functions.php");
 ?>
 <!doctype html>
 <html lang="en">
@@ -27,13 +28,6 @@ error_reporting(E_ALL);
 echo "PHP Array Practice.";
 $numbers = [7,9,8,9,8,8,6];
 
-function printArr($numbers){
-    echo "<p>";
-    foreach ($numbers as $number){
-        echo "$number<br>";
-    }
-    echo"<p>";
-}
 printArr($numbers);
 ?>
 

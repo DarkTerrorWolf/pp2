@@ -37,3 +37,29 @@ function removeDups($array){
     }
     return $newarray;
 }
+
+function distribution($array){
+    $newArr = [];
+    foreach ($array as $arr){
+        $count =0;
+        for($i=0;$i<sizeof($array);$i++){
+            if($arr == $array[$i]){
+                $count++;
+            }
+        }
+        $go = true;
+        foreach ($newArr as $nr){
+            if($nr == $arr){
+                $go = false;
+                break;
+            }
+        }
+        if($go==true) {
+
+            $newArr[$arr]=$count;
+        }
+    }
+     ksort($newArr);
+    return $newArr;
+
+}

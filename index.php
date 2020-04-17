@@ -32,6 +32,10 @@ printArr($numbers);
 echo "Largest is ".largest($numbers);
 $newNums = removeDups($numbers);
 printArr($newNums);
+
+$orderedArr = distribution($numbers);
+echo "Distribution: ";
+var_dump($orderedArr);
 ?>
 
 </body>

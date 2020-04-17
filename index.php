@@ -29,6 +29,7 @@ echo "PHP Array Practice.";
 $numbers = [7,9,8,9,8,8,6];
 
 printArr($numbers);
+echo "Largest is ".largest($numbers);
 ?>
 
 </body>

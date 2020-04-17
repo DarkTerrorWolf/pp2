@@ -17,3 +17,23 @@ function largest($array){
     }
     return $largest;
 }
+
+function removeDups($array){
+    $newarray=[$array[0]];
+    $check=false;
+    foreach ($array as $arr){
+        for($i = 0; $i<sizeof($newarray);$i++){
+           if($newarray[$i]==$arr){
+               echo $arr;
+               $check=false;
+               break;
+           }
+           $check=true;
+        }
+        if($check==true){
+            $newarray[]=$arr;
+        }
+
+    }
+    return $newarray;
+}
